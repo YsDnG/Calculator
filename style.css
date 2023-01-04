@@ -1,0 +1,77 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 3vmin;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: rgb(39, 38, 38);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input
+{
+    height: 5vmax;   
+    flex: 1 0 auto;
+    border-radius: 10%;
+    font-size: 3vmin;
+    background: rgb(231, 206, 206); 
+}
+
+
+.container 
+{
+    width: 50vw;
+    height: 50vh;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    gap: 0.5em;
+
+}
+.display{
+    background-color: white;
+    text-align: center;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(231, 206, 206); 
+}
+.red
+{
+    background-color: red;
+}
+.buttons
+{
+    flex: 1 1 90%;
+    display: flex;
+    gap: 0.3em;
+}
+.ligne{
+
+    display: flex;
+    flex: 1;
+    gap: 0.2em;
+    align-items: center;
+    
+}
+.column
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    justify-content: center;
+    
+    
+}
