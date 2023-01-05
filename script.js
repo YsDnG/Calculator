@@ -229,7 +229,7 @@ clickMe.addEventListener('click',(e)=>{
     else
     {
     document.querySelector('.container').style.display='none'
-    document.body.style.backgroundImage ='url(../img/that-was-boring.jpg)'
+    document.body.style.backgroundImage ='url(./img/that-was-boring.jpg)'
     clickMe.value = 'Why?'
     clickMe.style.backgroundColor = 'white'
     clickMe.style.color = "black"
