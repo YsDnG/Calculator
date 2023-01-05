@@ -9,52 +9,54 @@
 </head>
     <body>
         <div class="container">
-            <div class="display"> 0 </div>
+            <div class="displayConteneur">  
+                <p class="lastResult "></p>
+                <p class="display"></p>
+            </div>
             <div class="buttons">
                 <div class="column">
                     <div class="ligne">
-                        <input type="button" value="1" data-type="number" >
-                        <input type="button" value="2" data-type="number">
-                        <input type="button" value="3" data-type="number">
+                        <input type="button" value="1" data-type="number" data-key="97">
+                        <input type="button" value="2" data-type="number" data-key="98">
+                        <input type="button" value="3" data-type="number" data-key="99">
                     </div>
                     <div class="ligne">
-                        <input type="button" value="4" data-type="number">
-                        <input type="button" value="5" data-type="number">
-                        <input type="button" value="6" data-type="number">
+                        <input type="button" value="4" data-type="number" data-key="100">
+                        <input type="button" value="5" data-type="number" data-key="101">
+                        <input type="button" value="6" data-type="number" data-key="102">
                     </div>
                     
                     <div class="ligne">
-                        <input type="button" value="7" data-type="number">
-                        <input type="button" value="8" data-type="number">
-                        <input type="button" value="9" data-type="number">
+                        <input type="button" value="7" data-type="number" data-key="103">
+                        <input type="button" value="8" data-type="number" data-key="104">
+                        <input type="button" value="9" data-type="number" data-key="105">
                     </div>
                     <div class="ligne">
                         
-                        <input type="button" value="0" data-type="number">
+                        <input type="button" value="0" data-type="number" data-key="96">
                         
                     </div>
                 </div>
                 <div class="column">
                     <div class="ligne">
-                        <input type="button" class="red" value="(" data-type="operator">
-                        <input type="button" class="red"value=")" data-type="operator">
-                        <input type="button" value="Del"data-type="delete">
+                        <input type="button" value='<='data-type="delete" data-key="8">
+                        <input type="button" value="Del"data-type="delete" data-key="56">
                     </div>
                     
                     <div class="ligne">
-                        <input type="button" value="+" data-type="operator">
-                        <input type="button" value="-" data-type="operator">
-                        <input type="button" value="x" data-type="operator">
+                        <input type="button" value="+" data-type="operator" data-key="107">
+                        <input type="button" value="-" data-type="operator" data-key="109">
+                        <input type="button" value="x" data-type="operator" data-key="106">
                     </div>
                     <div class="ligne">
-                        <input type="button" class="red" value="mod" data-type="operator">
-                        <input type="button" class="red" value="√" data-type="operator">
-                        <input type="button" value="²" class="red"data-type="operator">
+                        <input type="button" class="red" value="mod" data-type="operator" data-key="">
+                        <input type="button" class="red" value="√" data-type="operator" data-key="">
+                        <input type="button" value="²" data-type="operator" data-key="">
                     </div>
                     <div class="ligne">
-                        <input type="button" value="=" data-type="operator">
-                        <input type="button" class="red" value="," data-type="operator">
-                        <input type="button" value="÷" data-type="operator">
+                        <input type="button" value="=" data-type="operator" data-key="13">
+                        <input type="button"  value="." data-type="number" data-key="108">
+                        <input type="button" value="÷" data-type="operator" data-key="111">
                     </div>
                     
                 </div>
@@ -62,6 +64,7 @@
             </div>
 
         </div>
+        <input type="button" value="Don't" class="clickme" data-key="">
     
     
     </body>

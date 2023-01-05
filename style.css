@@ -19,11 +19,27 @@ body{
 
 input
 {
-    height: 5vmax;   
+    
     flex: 1 0 auto;
-    border-radius: 10%;
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #2c0505;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
     font-size: 3vmin;
-    background: rgb(231, 206, 206); 
+    justify-content: center;
+    line-height: 1em;
+    padding: 0.2em;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer; 
 }
 
 
@@ -31,21 +47,75 @@ input
 {
     width: 50vw;
     height: 50vh;
-    background: #000;
+    background: rgb(218, 190, 190);
     display: flex;
     flex-direction: column;
     padding: 0.5em;
     gap: 0.5em;
+    box-shadow: rgba(151, 65, 252, 0.8) 0.5em 0.5em 2em 2em;
+    border: 7px solid rgba(151, 65, 252,0.47);
+    border-radius: 30px;
 
 }
-.display{
-    background-color: white;
+.clickme{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    border-radius: 50%;
+    padding: 0.2em;
+    font-size: 0.5em;
+    width: 3em;
+    height: 3em;
+    flex: 0;
+    background-image: none;
+    color:#684d4d;
+    background: rgb(59, 58, 58);
+    
+}
+.clicked{
+    position: absolute;
+    top:0;
+    left: 25%;
+    background-image: none;
+    color: green;
+    font-size: 2.5vmin;
+    border-radius: 0;
+    width: auto;
+    height: 2em;
+}
+.displayConteneur
+{
+    height: 10vh;
+    background-color: rgba(151, 65, 252, 0.8);
+    width: auto;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100% ;
+    grid-template-areas: "display lastResult"
+                                
+    ;
+}
+.display {
+    
     text-align: center;
     height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(231, 206, 206); 
+    animation: 
+    typing 0.5s steps(20, end) forwards;
+    
+}
+.lastResult{
+    height: 1em;
+    text-align: right;
+    font-size: 2vmin;
+    grid-area: lastResult;
+}
+@keyframes typing {
+    from{ width: 0;}
+    to{ width: 100%;}
+    
 }
 .red
 {
@@ -75,3 +145,25 @@ input
     
     
 }
+
+
+@media screen and (max-width:500px) {
+    input{
+        line-height: 5vmin;
+    }
+    .container{
+        overflow: hidden;
+        padding: 1em;
+    }
+    .displayConteneur{
+        border-radius: 10%;
+    }
+
+    body{
+        background-repeat:initial;
+        background-position: center;
+    }
+
+    
+}
+
