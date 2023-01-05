@@ -221,7 +221,7 @@ clickMe.addEventListener('click',(e)=>{
         document.body.style.backgroundImage ='none'
         clickMe.value = "You should listen, now you are stuck with me !"
         clickMe.style.backgroundColor ="red"
-        
+        clickMe.classList.remove('clickme')
         clickMe.classList.add('clicked')
        
         clickMe.disabled=true
